@@ -1,4 +1,5 @@
-# cross-zip-cli
+cross-zip-cli
+=============
 
 [![npm][npm-image]][npm-url]
 [![travis][travis-image]][travis-url]
@@ -11,18 +12,57 @@
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [standard-url]: http://npm.im/standard
 
-Zip directories cross platform from the CLI.
+Zip/Unzip directories cross platform from the CLI. Great for npm scripts. Built on https://github.com/feross/cross-zip.
+
+## Why?
+
+This is really useful for zipping/unzipping in your npm scripts that should run on cross-platform.
+
 
 ## Install
 
 ```
-npm install cross-zip-cli
+npm install -g cross-zip-cli
 ```
 
 ## Usage
 
-```js
-var crossZipCli = require('cross-zip-cli')
+### cross-zip
+
+```
+cross-zip [options] inputDir [zipFile]
+
+  Zips a directory.
+
+Examples:
+
+  cross-zip /tmp/data
+  cross-zip /tmp/data /tmp/data-reports.zip
+
+Options:
+
+  --help This message that you're viewing.
+  --version The version.
+```
+
+### cross-unzip
+
+```
+
+  cross-zip [options] inputDir [zipFile]
+
+    Zips a directory.
+
+  Examples:
+
+    cross-zip /tmp/data
+    cross-zip /tmp/data /tmp/data-reports.zip
+
+  Options:
+
+    --help This message that you're viewing.
+    --version The version.
+
 ```
 
 ## License
