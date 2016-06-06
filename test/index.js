@@ -7,8 +7,8 @@ var test = require('tape')
 test('zip / unzip', function (t) {
   t.plan(9)
 
-  let zip = path.join(__dirname, '../zip.js')
-  let unzip = path.join(__dirname, '../unzip.js')
+  var zip = path.join(__dirname, '../zip.js')
+  var unzip = path.join(__dirname, '../unzip.js')
 
   var testDir = path.join(os.tmpdir(), 'cross-zip-cli')
   fs.emptyDirSync(testDir)
@@ -42,8 +42,8 @@ test('zip / unzip', function (t) {
 test('zip / unzip (without params)', function (t) {
   t.plan(9)
 
-  let zip = path.join(__dirname, '../zip.js')
-  let unzip = path.join(__dirname, '../unzip.js')
+  var zip = path.join(__dirname, '../zip.js')
+  var unzip = path.join(__dirname, '../unzip.js')
 
   var testDir = path.join(os.tmpdir(), 'cross-zip-cli')
   fs.emptyDirSync(testDir)
