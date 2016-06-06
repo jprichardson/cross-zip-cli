@@ -1,0 +1,15 @@
+
+  cross-zip [options] inputDir [zipFile]
+
+    Zips a directory.
+
+  Examples:
+
+    cross-zip /tmp/data
+    cross-zip /tmp/data /tmp/data-reports.zip
+
+  Options:
+
+    --help This message that you're viewing.
+    --version The version.
+ 

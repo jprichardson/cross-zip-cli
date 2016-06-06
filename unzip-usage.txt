@@ -1,0 +1,15 @@
+
+  cross-unzip [options] zipFile [outputDir]
+
+    Unzips a zip file.
+
+  Examples:
+
+    cross-unzip /tmp/data.zip
+    cross-unzip /tmp/data.zip /tmp/data-reports
+
+  Options:
+
+    --help This message that you're viewing.
+    --version The version.
+ 
