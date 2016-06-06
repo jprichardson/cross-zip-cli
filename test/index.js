@@ -30,7 +30,9 @@ test('zip / unzip', function (t) {
   t.true(fs.existsSync(dirToZip), 'unzip dir created')
 
   // may need to change this silliness
-  dirToZip = path.join(dirToZip, 'gonna-zip-this')
+  if (process.platform !== 'win32') {
+    dirToZip = path.join(dirToZip, 'gonna-zip-this')
+  }
 
   t.strictEqual(fs.readFileSync(path.join(dirToZip, 'f1.txt'), 'utf8'), 'hello1', 'contents of file 1')
   t.strictEqual(fs.readFileSync(path.join(dirToZip, 'f2.txt'), 'utf8'), 'hello2', 'contents of file 2')
@@ -65,7 +67,9 @@ test('zip / unzip (without params)', function (t) {
   t.true(fs.existsSync(dirToZip), 'unzip dir created')
 
   // may need to change this silliness
-  dirToZip = path.join(dirToZip, 'gonna-zip-this')
+  if (process.platform !== 'win32') {
+    dirToZip = path.join(dirToZip, 'gonna-zip-this')
+  }
 
   t.strictEqual(fs.readFileSync(path.join(dirToZip, 'f1.txt'), 'utf8'), 'hello1', 'contents of file 1')
   t.strictEqual(fs.readFileSync(path.join(dirToZip, 'f2.txt'), 'utf8'), 'hello2', 'contents of file 2')
