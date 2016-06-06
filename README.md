@@ -13,7 +13,7 @@ cross-zip-cli
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [standard-url]: http://npm.im/standard
 
-Zip/Unzip directories cross platform from the CLI. Great for npm scripts. Built on https://github.com/feross/cross-zip.
+Zip/Unzip directories cross platform from the CLI. Great for npm scripts. Built on [cross-zip][cross-zip].
 
 ## Why?
 
@@ -66,6 +66,12 @@ Options:
 
 ```
 
+## Related
+- [cross-zip][cross-zip]: npm module this is built on.
+
 ## License
 
 [MIT](LICENSE.md)
+
+
+[cross-zip]: https://github.com/feross/cross-zip
