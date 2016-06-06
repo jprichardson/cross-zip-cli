@@ -1,7 +1,6 @@
-# cross-zip-cli change log
+Unreleased
+----------
 
-All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/).
-
-## Unreleased
-* engage
+1.0.0 / 2016-06-06
+------------------
+- initial release

@@ -1,7 +1,7 @@
 {
   "name": "cross-zip-cli",
   "description": "Zip directories cross platform from the CLI.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "JP Richardson <jprichardson@gmail.com>",
   "bin": {
     "cross-unzip": "unzip.js",
