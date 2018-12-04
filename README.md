@@ -51,14 +51,13 @@ Options:
 
 ```
 
-  cross-zip [options] inputDir [zipFile]
+  cross-unzip [options] zipFile outputDir
 
-    Zips a directory.
+    Unzips a file.
 
   Examples:
 
-    cross-zip /tmp/data
-    cross-zip /tmp/data /tmp/data-reports.zip
+    cross-unzip /tmp/data-reports.zip /tmp/data
 
   Options:
 
